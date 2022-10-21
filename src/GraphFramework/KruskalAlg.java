@@ -191,11 +191,11 @@ public class KruskalAlg extends MSTAlgorithm {
 		   // House name. A – House name. B :
 		   // Output as required: road name: road x1 road size: 20 
 		   for(int i=0; i<MSTresultList.length-1; i++) {
-			  Vertex vf =  (House)(MSTresultList[i].source);
+			  Vertex vf =  MSTresultList[i].source;
 			  vf.displayInfo(); System.out.print(" - ");
-			  Vertex vs = (House)(MSTresultList[i].target);
+			  Vertex vs = MSTresultList[i].target;
 			  vs.displayInfo(); System.out.print(" : road name: road x" + (MSTresultList[i].source.label+1) + " ");
-			  Edge e = (Road)(MSTresultList[i]);
+			  Edge e = MSTresultList[i];
 			  e.displayInfo(); System.out.println();  
 		   }
 	   }
