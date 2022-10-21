@@ -189,7 +189,8 @@ public class RoadDesignApp {
       System.out.println("Running time for Priority-queue Prim Algorithm: "+ PQPrimlFinalTime);
 
 	} // End of if
-	  
+		
+      input.close();
       System.out.println("Build Successful.");
       
   } // End of Main
